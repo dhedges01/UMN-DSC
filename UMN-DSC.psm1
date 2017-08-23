@@ -185,8 +185,8 @@ class cModule
     {
         if ($this.present -eq [Present]::Present)
         {
-            if ($this.requiredVersion){Install-Module -Name $this.module -RequiredVersion $this.requiredVersion -Force;Restart-Computer}
-            else{Install-Module -Name $this.module -Force;Restart-Computer}
+            if ($this.requiredVersion){Install-Module -Name $this.module -RequiredVersion $this.requiredVersion -Force}
+            else{Install-Module -Name $this.module -Force}
             
         }
         else{
