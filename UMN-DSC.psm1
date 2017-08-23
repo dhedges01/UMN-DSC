@@ -171,11 +171,11 @@ class cModule
 {
 
     # A DSC resource must define at least one key property.
-    [DscProperty(Key)]
+    [DscProperty(Mandatory)]
     [Present]$present
 
     # Mandatory indicates the property is required and DSC will guarantee it is set.
-    [DscProperty(Mandatory)]
+    [DscProperty(Key)]
     [string]$module
     
     [string]$requiredVersion
